@@ -1,67 +1,34 @@
-# Assignment:
-Your task is to create a backend service (REST API) for a trello clone app with domain driven approach. <br/>
-Below is an example of a UI for the board page of the app.<br/>
-
-| to do | in progress | review | test  | deploy | done  |
-|-------|-------------|--------|-------|--------|-------|
-| task1 |             |        | task3 |        |       |
-|       | task 2      |        |       |        |       |
-|       |             |        |       |        | task4 |
-
-It contains the trello board with multiple columns representing task's statuses.<br/>
-The user can add, modify (moving from 1 column to another), or delete task.<br/>
-To access the board page, the user have to be authenticated by the system using Oauth2. <br/>
-
-<b>Please fork this repository to your own github account and create a pull request when done.</b>
-
-# Test duration: 1 week (7 days)
-
-# Assessment points
-- REST API routing design
-- Application modelling and abstraction skill
-- Quality assessment with unit testing and functional API test
-- Creation of Web UI (optional)
+# Note:
+First of all I apologize because I have zero experiences with JAVA so I change all the repository with my own. <br/>
+I used node JS for backend, mongo DB as database, and Angular for Frontend app it can be accesed from my_test folder.<br/>
 
 # Setup
-
 1. Clone the repository
-2. Install java 17 (temurin-17)
-3. Install docker and docker-compose
-4. Install maven (optional)
+2. Install Node JS (v18.12.0)
+3. Install Angular
+4. Install mongoDB
     
 # Running the tests
-Please take a look at the integration tests in: src/test/java/com/trello/clone/integration/AlmendeServiceIT<br/>
-After all the required tools are installed. Run the following command to execute the tests:
+There are two folder inside my_test folder Server and Client Please navigate to ecah folder and run the test with:
 ```sh 
-./mvnw verify -DskipITs=false
+npm install -g typescript (to install typescript)
+npm install (to install the package)
+npm start ( to run the server and client)
 ```
-Or you can use IDE such as Intellij or Eclipse to run AlmendeServiceIT<br/>
-After running the tests you should see that some tests have passed and some have failed.<br/>
-Please fix the failed tests by creating the necessary endpoints and business logic.<br/>
-Make sure the tests that was once passed will still pass.<br/>
+
 
 # Note:
-- Even though we are using Java and Spring in this codebase, feel free to use any programming language or framework of your own choice. <br/>
-- Feel free to replace existing MongoDB with a database of your own choice. <br/>
-- The integration tests are using [testcontainers](https://www.testcontainers.org/) and testcontainers have been forked in multiple programming languages:
-  - [go](https://golang.testcontainers.org/)
-  - [node](https://github.com/testcontainers/testcontainers-node)
-  - [java]([testcontainers](https://www.testcontainers.org/))
-  - [rust](https://github.com/testcontainers/testcontainers-rs)
+- I did not made the code from the scracht by myself I took my old project, tutorial, and others sample project especially on frontend side <br/>
 
-Feel free to rewrite the integration test in any of the above language if you feel it is necessary <br/>
-You do not have to follow the existing project structure, feel free to implement your own or rewrite the entire source directory if need to. <br/>
-
-Here are the user stories that need to be fulfilled: <br/>
 
 ## User Stories
 
 ### In Identity Domain, as a User I :
 - can register
-  - get ok status with valid payload
-  - get error with invalid payload
+  - get ok status with valid payload [x]
+  - get error with invalid payload [x]
 - can login
-  - get new token pair (access & refresh token) with valid payload
+  - get new token pair (access & refresh token) with valid payload 
   - get error with invalid payload
 - can refresh
   - get new token pair with valid refresh token
