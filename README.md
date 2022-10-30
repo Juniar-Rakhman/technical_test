@@ -25,8 +25,8 @@ npm start ( to run the server and client)
 
 ### In Identity Domain, as a User I :
 - can register
-  - get ok status with valid payload [x]
-  - get error with invalid payload [x]
+  - get ok status with valid payload :white_check_mark
+  - get error with invalid payload 
 - can login
   - get new token pair (access & refresh token) with valid payload 
   - get error with invalid payload
