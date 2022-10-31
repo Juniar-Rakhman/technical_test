@@ -19,7 +19,7 @@ npm start ( to run the server and client)
 
 # Note:
 - I did not made the code from the scracht by myself I took my old project, tutorial, and others sample project especially on frontend side <br/>
-- Kindly also check my repository related to Robot Operating System (ROS) [a link](https://github.com/zthanxx/tank_bot)
+- Kindly also check my repository related to Robot Operating System (ROS) [here](https://github.com/zthanxx/tank_bot)
 
 
 ## User Stories
