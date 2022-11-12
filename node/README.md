@@ -49,7 +49,7 @@ Header:
 `Authorization: Bearer <your token>`
 
 - Fetch All Board data 
-[GET] `api/board`
+[GET] `/api/board`
 - Create new Board
 [POST] `/api/board/`
 ```
