@@ -17,25 +17,24 @@ To access the board page, the user have to be authenticated by the system using 
 # Test duration: 1 week (7 days)
 
 # Assessment points
-- REST API routing design
-- Application modelling and abstraction skill
-- Quality assessment with unit testing and functional API test
-- Creation of Web UI (optional)
+- [x] REST API routing design
+- [x] Application modelling and abstraction skill
+- [x] Quality assessment with unit testing and functional API test
+- [ ] Creation of Web UI (optional)
 
 # Setup
 
 1. Clone the repository
-2. Install java 17 (temurin-17)
+2. Install nodejs
 3. Install docker and docker-compose
-4. Install maven (optional)
+4. Run `npm install` in node folder (Manual Install)
     
 # Running the tests
-Please take a look at the integration tests in: src/test/java/com/trello/clone/integration/AlmendeServiceIT<br/>
+Please take a look at the integration tests in: node/tests/<br/>
 After all the required tools are installed. Run the following command to execute the tests:
-```sh 
-./mvnw verify -DskipITs=false
 ```
-Or you can use IDE such as Intellij or Eclipse to run AlmendeServiceIT<br/>
+npm test
+```
 After running the tests you should see that some tests have passed and some have failed.<br/>
 Please fix the failed tests by creating the necessary endpoints and business logic.<br/>
 Make sure the tests that was once passed will still pass.<br/>
